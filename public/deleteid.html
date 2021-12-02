@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+        <style>
+            body{
+                background: url("loginbackground.jpg");
+                margin: 0;
+                padding: 0;
+                background-size: contain;
+                color: white;
+            }
+            #container
+            {
+                width: 300px;
+                padding: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: rgba(0, 0, 0, 0.4);
+                text-align: center;
+            }
+            input[type=text],input[type=password]
+            {
+                padding: 15px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 40px;
+                width: 200px;
+                background: rgba(210,218,226,0.5);
+                color: white;
+                border: 0px;
+            }
+            input[type=submit]
+            {
+                margin-top: 10px;
+                border: 0;
+                background: rgba(87,95,207,0.5);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: white;
+
+            }
+            ::placeholder
+            {
+                color: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h2>
+                Delete ID
+            </h2><br>
+            <form action = "/deleteAttempt" method="post">
+                <input type="text" name="Name" placeholder="Enter username" required>
+                <br>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <br>
+                <input type="submit" value="Submit">            
+            </form>
+        </div>
+    </body>
+</html>

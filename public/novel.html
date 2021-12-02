@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <script type="text/javascript" src="socket.io/socket.io.js" defer></script>
+  <script type="text/javascript" src="script.js" defer></script>
+  <style>
+    #message-container {
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    #message-container div {
+      background-color: #CCC;
+      padding: 5px;
+    }
+
+    #message-container div:nth-child(2n) {
+      background-color: #FFF;
+    }
+
+    #send-container {
+      position: relative;
+      padding-top: 30px;
+      padding-bottom: 15px;
+      background-color: white;
+      max-width: 1200px;
+      width: 80%;
+      display: flex;
+    }
+
+    #message-input {
+      flex-grow: 1;
+    }
+
+    #parent {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+
+    #pageTitle {
+      color: cadetblue;
+      font-size: 35px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #novelContent {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+
+    #chapbutton {
+      border: 0px;
+      width: 75px;
+      height: 30px;
+      background: #55efc4;
+    }
+
+    #center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="pageTitle"></div>
+  <div id="novelContent"></div>
+
+  <div id="center"><div id="buttonpos"></div></div>
+  <div id="CommentSection">
+    <form id="send-container">
+      <textarea id="message-input" form="send-container" rows="4" placeholder="Comment here...."></textarea>
+      <input type="submit" id="send-button">
+    </form>
+
+    <div id="message-container"></div>
+  </div>
+</body>
+
+</html>

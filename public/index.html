@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Welcome
+        </title>
+        <style>
+            body{
+                background: url("loginbackground.jpg");
+                margin: 0;
+                padding: 0;
+                background-size: contain;
+                color: white;
+            }
+            #container
+            {
+                width: 300px;
+                padding: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: rgba(0, 0, 0, 0.4);
+                text-align: center;
+            }
+            button{
+                color: white;
+                font-weight: bold;
+                background: rgba(10,61,98,0.5);
+                height: 30px;
+                width: 100px;
+                border: 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <a href="http://localhost:5000/login"><button>Login</button> </a>
+            <br>
+            <a href="http://localhost:5000/signup"><button>Sign Up</button> </a>
+            <br>
+            <a href="http://localhost:5000/deleteid"><button>Delete ID</button> </a>
+        </div>
+    </body>
+</html>
